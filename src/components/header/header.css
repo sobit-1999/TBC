@@ -1,0 +1,50 @@
+.header_container{
+    background-color: #fff;
+    color: black;
+}
+.logo{
+    /* margin-left: 7%; */
+    color: rgb(159, 150, 150);
+}
+
+.category{
+    display: flex;
+    align-items: center;
+}
+
+.icons{
+    display: flex;
+}
+.icons > button {
+    border: 1px solid rgb(159, 150, 150);
+    border-radius: 40%;
+    margin-left: 20px;
+    padding: 14px;
+}
+.icons >.button_ilova{
+    border-radius: 18px;
+    font-size: 12px;
+    background-color: rgb(40, 154, 196);
+    padding: 0 20px;
+    color: #fff;
+    border: none;
+}
+
+.icons >.button_ilova :hover{
+    background-color: rgb(94, 185, 218);
+}
+
+.header-category{
+    display: flex;
+    background-color: rgb(243, 238, 231);
+    margin: 7px 15%;
+    width: 70%;
+    padding: 50px;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    /* justufay-content */
+}
+.header-category > div > p {
+    margin-top: 15px ;
+    display: block;
+}
