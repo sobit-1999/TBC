@@ -139,8 +139,7 @@ export default function Kreditlar() {
             <p>foiz stavkasi</p>
             <h1>{valueStavka + "%"}</h1>
             <hr />
-            <p>oylik to'lov</p>
-            <p>(taxminan)</p>
+            <p>oylik to'lov (taxminan)</p>
             <h4>{oylikTolov}</h4>
           </div>
           </div>
