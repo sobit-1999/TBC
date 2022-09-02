@@ -9,6 +9,7 @@ export default function Kreditlar() {
   const [valueMuddat, setValueMuddat] = useState(12);
   const [valueStavka, setValueStavka] = useState(28);
 
+  const oylikTolov = (valueMiqdor*(1+valueStavka/100) / valueMuddat).toFixed(2)
   return (
     <div>
       <div className="container-kreditlar">
@@ -133,14 +134,20 @@ export default function Kreditlar() {
               </div>
             </div>
           </div>
+          <div className="foiz-card">
           <div className="foiz-stavkasi">
             <p>foiz stavkasi</p>
             <h1>{valueStavka + "%"}</h1>
             <hr />
             <p>oylik to'lov</p>
-            <h4>nechidir UZS</h4>
+            <p>(taxminan)</p>
+            <h4>{oylikTolov}</h4>
+          </div>
           </div>
         </div>
+        <div className="kredit-button">
+        <button >Kredit olish</button>
+       </div>
       </div>
     </div>
   );

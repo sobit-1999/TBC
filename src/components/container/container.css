@@ -113,12 +113,13 @@ padding: 100px 10% 100px 0;
     padding: 0 5px;
     margin-top: -10px;
 }
-
-.foiz-stavkasi{
-    display: grid;
-    grid-template-columns: 100%;
+.foiz-card{
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.foiz-stavkasi{
     width: 350px;
     height: 350px;
     text-align: center;
@@ -139,7 +140,19 @@ padding: 100px 10% 100px 0;
     
    }
 
-
+    .kredit-button{
+     text-align: center;
+     width: 100%;
+     margin-top: 40px;
+    }
+    .kredit-button > button{
+    font-size: 20px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: rgb(50, 191, 231);
+   }
 
 
 
@@ -152,20 +165,15 @@ padding: 100px 10% 100px 0;
     display: grid;
     grid-template-columns: 100%;
     }
+    .kredit-card{
+        padding: 0px 0 20px 0;
+        }
     .stavka-card{
         display: grid;
         grid-template-columns: 100%;
     }
     .grid-card { 
         grid-template-columns: 100%;
-    }
-    .foiz-stavkasi{
-        transform: translate(-50% -50%);
-    }
-    .foiz-stavkasi{
-        margin: 0 20%;
-        width: 60%;
-        height: auto;
     }
   }
   
@@ -180,16 +188,13 @@ padding: 100px 10% 100px 0;
         grid-template-columns: 100% ;
     }
     
-    .grid-card { 
-        grid-template-columns: 100%;
-       
-    }
+    .kredit-card{
+      padding: 100px 10% 100px 0;
+        }
     
-.foiz-stavkasi{
-    margin: 0 20%;
-    width: 60%;
-    height: auto;
-}
+    .grid-card { 
+        grid-template-columns: 100%;  
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -206,12 +211,6 @@ padding: 100px 10% 100px 0;
     .grid-card { 
         grid-template-columns:auto 50%;
     }
-    .foiz-stavkasi{
-        width: 350px;
-        height: 350px;
-        margin: 0;
-    }
-
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
@@ -220,6 +219,10 @@ padding: 100px 10% 100px 0;
         display: grid;
         grid-template-columns: 45% 55%;
     }
+    
+    .kredit-card{
+        padding: 0px 0 20px 0;
+        }
     .stavka-card{
         display: grid;
         grid-template-columns: 50% 50% ;
