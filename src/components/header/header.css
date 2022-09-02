@@ -1,12 +1,6 @@
 .header_container{
-    background-color: #fff;
     color: black;
 }
-.logo{
-    /* margin-left: 7%; */
-    color: rgb(159, 150, 150);
-}
-
 .category{
     display: flex;
     align-items: center;
@@ -35,14 +29,16 @@
 }
 
 .header-category{
+    position: absolute;
     display: flex;
-    background-color: rgb(243, 238, 231);
-    margin: 7px 15%;
-    width: 70%;
+    background-color: #fff;
+    margin: 7px 10%;
+    width: 80%;
     padding: 50px;
     justify-content: space-evenly;
     border-radius: 20px;
-    /* justufay-content */
+    box-shadow: 1px 3px 10px rgb(201, 202, 203) ;
+    border: none;
 }
 .header-category > div > p {
     margin-top: 15px ;

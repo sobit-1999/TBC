@@ -1,0 +1,237 @@
+.container-kreditlar {
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.container-kreditlar > img {
+    width: 100%;
+    border-radius: 30px;
+    height: 100%;
+}
+.kredit-card{
+font-size: 20px;
+padding: 100px 10% 100px 0;
+}
+.kredit-card > h1{
+    font-size: 50px;
+    font-weight: 400;
+    
+}
+.kredit-card > h3{
+    font-weight: 400;
+}
+.kredit-card >.sta > span{
+    display: flex;
+    align-items: center;
+    margin: 1px;
+    width: 50%;
+}
+.kredit-card >.sta > span > h2 {
+    display: flex;
+    margin: 5px;
+    font-weight: 500;
+    margin-top: -2px;
+}
+.kredit-card > .sta{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.kredit-stavkasi{
+    padding: 5%;
+    border-radius: 25px;
+    margin: 70px 0;
+    background-color: rgb(172, 238, 238);
+}
+/* mq */
+.grid-card { 
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 25%;
+    /* background-color: #fff; */
+    grid-gap: 30px;
+    align-items: center;
+}
+.stavka-card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    font-weight: 400;
+    grid-gap: 25px;
+}
+.stavka-card > div {
+    align-items: center;
+   }
+.stavka-card  > h6 {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 15px 0;
+}
+.stavka-card  > h6:hover {
+   cursor: pointer;
+}
+.stavka-card  > h6 > p, h5{
+    font-size: 12px;
+}
+.stavka-card  > h6 >  h5{
+    font-size: 15px;
+}
+.icon{
+    position: relative;
+    /* animation-name: example; */
+    animation-duration: 1s;
+    animation-direction: reverse; 
+    animation-iteration-count: infinite;
+     
+  }
+  
+  @keyframes example {
+    0%   {  top:10px;}
+    100%  {  top:0px;}
+  }
+.stavka-card > div > .input {
+    width: 100%;
+    height: 51px;
+    margin-bottom: 25px;
+    margin-top: 3px;
+    bottom: none;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #fff;
+}
+.stavka-card > div > .input >input {
+    font-size: 20px;
+    border: none;
+    padding: 0 5%;
+    width: 100%;
+}
+.stavka-card > div > .input >div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    margin-top: -10px;
+}
+
+.foiz-stavkasi{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    padding: 10% 0;
+    grid-gap: 0;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 15px solid rgb(54, 144, 176);
+}
+.foiz-stavkasi>hr {
+ width: 40%;
+ text-align: center;
+ margin: 0 28%;
+
+}
+.foiz-stavkasi>p {
+    font-size: 20px;
+    
+   }
+
+
+
+
+
+
+
+
+
+   @media only screen and (max-width: 600px) {
+    .container-kreditlar {
+    display: grid;
+    grid-template-columns: 100%;
+    }
+    .stavka-card{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .grid-card { 
+        grid-template-columns: 100%;
+    }
+    .foiz-stavkasi{
+        transform: translate(-50% -50%);
+    }
+    .foiz-stavkasi{
+        margin: 0 20%;
+        width: 60%;
+        height: auto;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .container-kreditlar {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .stavka-card{
+        display: grid;
+        grid-template-columns: 100% ;
+    }
+    
+    .grid-card { 
+        grid-template-columns: 100%;
+       
+    }
+    
+.foiz-stavkasi{
+    margin: 0 20%;
+    width: 60%;
+    height: auto;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px ) {
+    .container-kreditlar {
+        display: grid;
+        grid-template-columns: 100% ;
+    }
+    .stavka-card{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    .grid-card { 
+        grid-template-columns:auto 50%;
+    }
+    .foiz-stavkasi{
+        width: 350px;
+        height: 350px;
+        margin: 0;
+    }
+
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .container-kreditlar {
+        display: grid;
+        grid-template-columns: 45% 55%;
+    }
+    .stavka-card{
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        font-weight: 400;
+    }
+    .grid-card { 
+        grid-template-columns:auto 40%;
+    }
+  } 
+
+  @media only screen and (min-width: 1200px) {
+    .grid-card { 
+        grid-template-columns:auto 30%;
+    }
+  } 
