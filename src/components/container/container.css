@@ -120,6 +120,9 @@ padding: 100px 10% 100px 0;
 }
 
 .foiz-stavkasi{
+    display: grid;
+    justify-content: center;
+    align-items: center;
     width: 350px;
     height: 350px;
     text-align: center;
