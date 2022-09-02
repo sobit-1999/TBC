@@ -192,7 +192,7 @@ padding: 100px 10% 100px 0;
     }
     
     .kredit-card{
-      padding: 100px 10% 100px 0;
+        padding: 0px 0 20px 0;
         }
     
     .grid-card { 
@@ -206,6 +206,9 @@ padding: 100px 10% 100px 0;
         display: grid;
         grid-template-columns: 100% ;
     }
+    .kredit-card{
+        padding: 0px 0 20px 0;
+          }
     .stavka-card{
         display: grid;
         grid-template-columns: 100%;
@@ -224,7 +227,7 @@ padding: 100px 10% 100px 0;
     }
     
     .kredit-card{
-        padding: 0px 0 20px 0;
+        padding: 100px 10% 100px 0;
         }
     .stavka-card{
         display: grid;
