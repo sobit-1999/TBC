@@ -174,7 +174,7 @@ export default function Kreditlar() {
       </div>
       </div>
       {/* card-4 */}
-        <CoruselCard />
+        {/* <CoruselCard /> */}
         {/* card-5 */}
         <div className="kreit-ilova-container">
                 <div>
