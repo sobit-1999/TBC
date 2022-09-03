@@ -153,15 +153,129 @@ padding: 100px 10% 100px 0;
     padding: 8px 20px;
     border-radius: 20px;
     border: none;
+    cursor: pointer;
     color: #fff;
     background-color: rgb(50, 191, 231);
    }
 
+   /* card-3 */
+   .kredit-rasmiylashtirish{
+    text-align: center;
+}
+.kredit-rasmiylashtirish-card{
+    display: grid;
+       grid-template-columns: auto auto auto auto;
+       grid-gap: 4%;
+       margin-top: 50px;
+       text-align: left;
+    }
+    .kredit-rasmiylashtirish-card >div{
+       border: 0.1px solid black;
+       padding: 50px 10%;
+       height: 350px;
+       border-radius: 30px;
+       font-size: 20px;
 
+   }
+   .kredit-rasmiylashtirish-card >div>h3{
+    margin-bottom: 20px;
+    font-weight: 500;
+   }
 
-
-
-
+   /* corusel-card */
+   .kreit-corusel{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 50% auto;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(220, 226, 231);
+    height: 100%;
+}
+.kreit-corusel > img {
+    height: 620px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px 0 0 30px;
+}
+.kreit-corusel-card{
+    font-size: 28px;
+    margin: 0 30% 0 20%;
+}
+.kreit-corusel-card> h1{
+    margin: 20px 0;
+    font-weight: 600;
+}
+.kreit-corusel-card> button{
+    margin: 30px 0;
+    font-size: 20px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(50, 191, 231);
+}
+.back-next{
+    display: flex;
+    justify-content: right;
+    margin-right: 30px;
+}
+.back ,.next {
+    border-radius: 50%;
+    padding: 7px;
+    text-align: center;
+    font-size: 10px;;
+    margin: 2px;
+}
+.kreit-ilova-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 50% auto;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(220, 226, 231);
+}
+.kreit-ilova-container > img {
+    height: 620px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px 0 0 30px;
+}
+.kreit-ilova-card{
+    margin: 18%;
+}
+.kreit-ilova-card > h1, p, h4{
+    margin-bottom: 30px;
+}
+.yuklab-olish{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.yuklab-olish > a{
+    display: flex;
+    width: 170px;
+    align-items: center;
+    cursor: pointer;
+    transition: 1s;
+}
+.yuklab-olish  :hover{
+color: aqua;
+}
+.yuklab-olish > a > .icon{
+ font-size: 60px;
+ margin-right: 14px;
+ border: 1px solid rgb(98, 97, 97);
+ padding: 10px;
+ border-radius: 20px;
+}
+.yuklab-olish > a > span > h5{
+ font-size: 15px;
+ font-weight: 500;
+}
 
    @media only screen and (max-width: 600px) {
     .container-kreditlar {
@@ -178,6 +292,15 @@ padding: 100px 10% 100px 0;
     .grid-card { 
         grid-template-columns: 100%;
     }
+    .kredit-rasmiylashtirish-card{
+           grid-template-columns: auto auto ;
+        }
+        .kreit-ilova-container{
+            grid-template-columns: auto;
+        }
+        .kreit-ilova-container> img{
+            border-radius: 0 0 30px 30px;
+        }
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -198,6 +321,16 @@ padding: 100px 10% 100px 0;
     .grid-card { 
         grid-template-columns: 100%;  
     }
+    .kredit-rasmiylashtirish-card{
+        grid-template-columns: auto  auto;
+     }
+     .kreit-ilova-container{
+         grid-template-columns: auto;
+     }
+     
+     .kreit-ilova-container> img{
+        border-radius: 0 0 30px 30px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -217,6 +350,10 @@ padding: 100px 10% 100px 0;
     .grid-card { 
         grid-template-columns:auto 50%;
     }
+    
+    .kredit-rasmiylashtirish-card{
+        grid-template-columns: auto auto auto;
+     }
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
@@ -236,6 +373,17 @@ padding: 100px 10% 100px 0;
     }
     .grid-card { 
         grid-template-columns:auto 40%;
+    }
+    
+    .kredit-rasmiylashtirish-card{
+        grid-template-columns: auto auto auto auto;
+     }
+     
+     .kreit-ilova-container{
+        grid-template-columns:50% auto;
+    }
+    .kreit-ilova-container> img{
+        border-radius:  0 30px 30px 0;
     }
   } 
 

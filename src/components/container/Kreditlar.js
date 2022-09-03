@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import ImgKredit from "../../img/image_2.jpeg";
 import "./container.css";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import CoruselCard from "./CoruselCard";
+import imgIlova from '../../img/image-14.jpeg'
+import AppleIcon from '@mui/icons-material/Apple';
+import AndroidIcon from '@mui/icons-material/Android';
 
 export default function Kreditlar() {
   const [valueMiqdor, setValueMiqdor] = useState(10000000);
@@ -10,6 +14,13 @@ export default function Kreditlar() {
   const [valueStavka, setValueStavka] = useState(28);
 
   const oylikTolov = (valueMiqdor*(1+valueStavka/100) / valueMuddat).toFixed(2)
+  const kreditRasmiylashtirish = [
+    { name: 'Shaffof kredit', text: 'Shartlarni mayda harflar ortiga yashirmaymiz.'},
+    { name: 'Shartlarimiz sizga moslashadi', text: 'Oyning qaysi sanasida toʻlov qilishni oʻzingiz tanlaysiz.    '},
+    { name: 'Ortiqcha hujjatlarsiz', text: `Kaﬁllik va daromad to‘g‘risida ma'lumot talab etilmaydi`},
+    { name: 'Yillik stavka — 28% dan 49% gacha', text: 'Foiz stavkasi keyingi kreditlarda kamayib boradi.'}
+  ]
+
   return (
     <div>
       <div className="container-kreditlar">
@@ -148,6 +159,44 @@ export default function Kreditlar() {
         <button >Kredit olish</button>
        </div>
       </div>
+          {/* card-3 */}
+      <div className="kredit-rasmiylashtirish">
+       <h2>Uyingizdan turib, bir necha daqiqada kredit rasmiylashtiring
+      </h2>
+        <div className="kredit-rasmiylashtirish-card">
+         {kreditRasmiylashtirish.map((item, i) => {return <div>
+          <h3>{item.name}</h3>
+          <p>{item.text}</p>
+          </div>
+          })}
+        </div>
+      <div>
+      </div>
+      </div>
+      {/* card-4 */}
+        <CoruselCard />
+        {/* card-5 */}
+        <div className="kreit-ilova-container">
+                <div>
+              <div className="kreit-ilova-card">
+              <h1>Kredit olish uchun TBC ilovasini yuklab oling</h1>
+              <p>Maqsadingizga teziroq erishing</p>
+              <h4>Ilovani yuklash:</h4>
+              <div className="yuklab-olish">
+              <a href="https://play.google.com/store/apps/details?id=ge.space.app.uzbekistan&hl=en&gl=US">
+                <AndroidIcon className="icon"/>
+                 <span> <h5>Android</h5>uchun yuklab olish</span>
+              </a>
+              
+              <a href="https://apps.apple.com/uz/app/tbc-uz/id1450503714">
+                <AppleIcon className="icon"/>
+                 <span> <h5>iOS</h5>uchun yuklab olish</span>
+              </a>
+              </div>
+              </div>
+                </div>
+                <img alt="Ilova jpg" src={imgIlova}  />
+              </div>
     </div>
   );
 }
