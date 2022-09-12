@@ -23,8 +23,8 @@ export default function CoruselCard() {
     return (
         <CarouselProvider
           naturalSlideWidth={100}
-          naturalSlideHeight={50}
           totalSlides={2}
+          naturalSlideHeight={70}
           visibleSlides={1}
         >
           <Slider>{kreditCorusel.map((item, i) => {return <Slide index={i}>

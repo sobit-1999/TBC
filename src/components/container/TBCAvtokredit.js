@@ -1,4 +1,4 @@
-import { Slide, Slider } from "@mui/material";
+import { Checkbox, Slide, Slider } from "@mui/material";
 import React, { useState } from "react";
 import ImgKredit from "../../img/image_2.jpeg";
 import "./container.css";
@@ -7,32 +7,39 @@ import CoruselCard from "./CoruselCard";
 import imgIlova from "../../img/image-14.jpeg";
 import AppleIcon from "@mui/icons-material/Apple";
 import AndroidIcon from "@mui/icons-material/Android";
+import Shartlar from "./shartlar/Shartlar";
 
-export default function Kreditlar() {
+export default function TBCAvtokridit() {
   const [valueMiqdor, setValueMiqdor] = useState(10000000);
   const [valueMuddat, setValueMuddat] = useState(12);
   const [valueStavka, setValueStavka] = useState(28);
+  const [valueBoshlangich, setvalueBoshlangich] = useState(20000000);
+  const [valueNumber, setvalueNumber] = useState(NaN);
+  const [checked, setChecked] = React.useState(true);
 
+  const handleChange = (event) => {
+    setChecked(event.target.checked);
+  };
   const oylikTolov = (
     (valueMiqdor * (1 + valueStavka / 100)) /
     valueMuddat
   ).toFixed(2);
   const kreditRasmiylashtirish = [
     {
-      name: "Shaffof kredit",
-      text: "Shartlarni mayda harflar ortiga yashirmaymiz.",
+      name: "1 kunda aftokredit",
+      text: "barcha xizmatlar bankning Toshkentdagi ofisida",
     },
     {
-      name: "Shartlarimiz sizga moslashadi",
-      text: "Oyning qaysi sanasida toʻlov qilishni oʻzingiz tanlaysiz.    ",
+      name: "Bir necha soniya ichida sug'urta",
+      text: "Sug'urta ilovaning o'zida rasmiylashtiriladi ",
     },
     {
-      name: "Ortiqcha hujjatlarsiz",
-      text: `Kaﬁllik va daromad to‘g‘risida ma'lumot talab etilmaydi`,
+      name: "Faqat 1 ta hujjat kerak",
+      text: `Faqat 1 ta hujjat kerak`,
     },
     {
-      name: "Yillik stavka — 28% dan 49% gacha",
-      text: "Foiz stavkasi keyingi kreditlarda kamayib boradi.",
+      name: "Avtokreditni 1 kunda uzish",
+      text: "Har oy qaysi sanada to'lashni o'zingiz tanlaysiz",
     },
   ];
 
@@ -40,22 +47,21 @@ export default function Kreditlar() {
     <div>
       <div className="container-kreditlar">
         <div className="kredit-card">
-          <h3>TBC KREDIT BILAN MAQSADINGIZGA TEZROQ ERISHING</h3>
+          <h3>IKKILAMCHI BOZOR UCHUN AVTOKREDIT OLING</h3>
           <br />
-          <h1>Ish haqingizdan 10 baravargacha ko‘p kredit</h1>
+          <h1>1 kunda avtokredit. Barcha xizmatlar bitta oynada</h1>
           <br /> <br />
           <p>
-            50 000 000 so‘mgacha kredit oling. Kaﬁllik va daromad to‘g‘risida
-            ma'lumotnoma talab etilmaydi. Har oy qaysi sanada to‘lashni o‘zingiz
-            tanlaysiz.
+            Kafillik va daromad to'grisida ma'lumot kerak emas. Har oy qaysi
+            sanada to'lashni o'zingiz tanlang
           </p>
           <br /> <br />
           <div className="sta">
             <span>
-              STAVKA <h2>28%</h2>DAN
+              <h2>25%</h2>DAN
             </span>
-            <span>
-              <h2>36</h2> OYGACHA
+            <span className="gacha">
+              <h2>60</h2> OYGACHA
             </span>
           </div>
         </div>
@@ -63,11 +69,11 @@ export default function Kreditlar() {
       </div>
 
       <div className="kredit-stavkasi">
-        <h2>Kredit stavkasini hisoblab oling</h2>
+        <h2>Avtokredit stavkasini hisoblab chiqing</h2>
         <p>
-          Kredit boʻyicha foiz stavkasini aniq hisoblab chiqish uchun TBC UZ
-          ilovasida roʻyxatdan oʻting va kredit rasmiylashtirish uchun talabnoma
-          joʻnating
+          - Avtokredit bo'yicha foiz stavkasini hisoblash uchun TBC UZ ilovasini
+          yuklab oling, ilovada ro'yxatdan o'ting va avtokreditni
+          rasmiylashtirish uchun talabnoma yuboring
         </p>
         <br />
         <div className="grid-card">
@@ -78,7 +84,7 @@ export default function Kreditlar() {
             </h6>
             <h6>
               <ArrowDownwardIcon className="icon-button" />
-              Online kredit
+              Online mikroqarz shartnomasi nomunasi
             </h6>
             <h6>
               <h5>Albatta tanishib chiqing</h5>
@@ -90,7 +96,7 @@ export default function Kreditlar() {
               To'lov jadvali
               <p>(aniq hisob kitob olsh uchun ilovada ariza to'ldiring)</p>
             </h6>
-            <div>
+            <div className="stavka-input-card">
               <p>Kredit miqdori</p>
               <div className="input">
                 <input
@@ -99,16 +105,16 @@ export default function Kreditlar() {
                 />
                 <Slider
                   style={{ width: "100%" }}
-                  min={500000}
-                  max={50000000}
-                  defaultValue={10000}
-                  step={500000}
+                  min={1000000}
+                  max={200000000}
+                  defaultValue={100000}
+                  step={1000000}
                   size="small"
                   value={valueMiqdor}
                   onChange={(e) => setValueMiqdor(e.target.value)}
                 />
                 <div>
-                  <p>300 000 UZS dan</p> <p>50 000 000 UZS gacha</p>{" "}
+                  <p>10 000 000 UZS dan</p> <p>200 000 000 UZS gacha</p>{" "}
                 </div>
               </div>
             </div>
@@ -122,21 +128,20 @@ export default function Kreditlar() {
                 />
                 <Slider
                   style={{ width: "100%" }}
-                  min={3}
-                  max={36}
-                  defaultValue={12}
+                  min={6}
+                  max={60}
+                  defaultValue={36}
                   step={1}
                   size="small"
                   value={valueMuddat}
                   onChange={(e) => setValueMuddat(e.target.value)}
                 />
                 <div>
-                  <p>3 oydan</p> <p>36 oygacha</p>{" "}
+                  <p>6 oydan</p> <p>60 oygacha</p>{" "}
                 </div>
               </div>
             </div>
             <div>
-              {" "}
               <p>Kredit stavkasi</p>
               <div className="input">
                 <input
@@ -145,17 +150,26 @@ export default function Kreditlar() {
                 />
                 <Slider
                   style={{ width: "100%" }}
-                  min={28}
-                  max={49}
-                  defaultValue={28}
+                  min={25}
+                  max={40}
+                  defaultValue={30}
                   step={1}
                   size="small"
                   value={valueStavka}
                   onChange={(e) => setValueStavka(e.target.value)}
                 />
                 <div>
-                  <p>28% dan</p> <p>49% gacha</p>{" "}
+                  <p>25% dan</p> <p>40% gacha</p>{" "}
                 </div>
+              </div>
+            </div>
+            <div>
+              <p>Boshlang'ich to'lov</p>
+              <div className="input">
+                <input
+                  value={valueBoshlangich}
+                  onChange={(e) => setvalueBoshlangich(e.target.value)}
+                />
               </div>
             </div>
           </div>
@@ -193,8 +207,40 @@ export default function Kreditlar() {
       <div className="kreit-ilova-container">
         <div>
           <div className="kreit-ilova-card">
-            <h1>Kredit olish uchun TBC ilovasini yuklab oling</h1>
-            <p>Maqsadingizga teziroq erishing</p>
+            <h1>Avtokredit TBC UZ ilovasida 5 daqiqada</h1>
+            <p>
+              Kreditning maksimal summasi — 200 mln so'm. Muhim xaridni amalga
+              oshirishingiz uchun
+            </p>
+            <div className="havola">
+              <input
+                placeholder="+998 XX-XXX-XX-XX"
+                type="number"
+                value={valueNumber}
+                onChange={(e) =>
+                  setvalueNumber(e.target.value) ||
+                  console.log(typeof e.target.value.length)
+                }
+              />
+              <button
+                style={{
+                  background:
+                    valueNumber.length === 12 ? "blue" : "rgb(218, 220, 206)",
+                  opacity: valueNumber.length === 12 ? "1" : "0.6",
+                }}
+              >
+                Havolani olish
+              </button>
+            </div>
+            <div className="xizmat-korsatish">
+              <Checkbox
+                checked={checked}
+                onChange={handleChange}
+                inputProps={{ "aria-label": "controlled" }}
+              />
+              <span>Bilan Roziman </span>
+              <span className="text"> Xizmat ko'rstaish shartlari</span>
+            </div>
             <h4>Ilovani yuklash:</h4>
             <div className="yuklab-olish">
               <a href="https://play.google.com/store/apps/details?id=ge.space.app.uzbekistan&hl=en&gl=US">
@@ -215,6 +261,7 @@ export default function Kreditlar() {
         </div>
         <img alt="Ilova jpg" src={imgIlova} />
       </div>
+      <Shartlar />
     </div>
   );
 }

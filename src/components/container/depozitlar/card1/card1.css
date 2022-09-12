@@ -1,46 +1,37 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.container > img {
+  width: 100%;
+  border-radius: 30px;
+  height: 100%;
+  object-fit: cover;
+}
+.card {
+  font-size: 30px;
+  padding: 100px 10%;
+    grid-area: 2 / 1 ;
+}
+.card > h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+.card > h3 {
   font-weight: 400;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-*:focus {
-  outline: none;
+.card > .stavka {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1px;
+  width: 100%;
 }
-a{
-  text-decoration: none;
-  color: #000;
-}
-@media only screen and (max-width: 600px) {
-  .contend {
-    padding:30px 10px;
-    font-size: 15px;
-  }
+h2 {
+  font-weight: 600;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .contend {
-    padding: 30px 10px;
-    font-size: 15px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .contend {
-    padding: 30px 10px;
-    font-size: 15px;
-    font-size: 20px;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 1500px) {
-  .contend {
- padding: 70px 120px;
-}
-} 
 @media only screen and (max-width: 600px) {
   .container {
     display: grid;
@@ -63,11 +54,22 @@ a{
 
   .card {
     padding: 0px 0 20px 0;
+    font-size: 15px;
     grid-area: 1 / 1;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .card {
+    padding: 0px 0 20px 0;
+    font-size: 20px;
+  }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {

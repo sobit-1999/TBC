@@ -14,7 +14,8 @@ padding: 100px 10% 100px 0;
 }
 .kredit-card > h1{
     font-size: 50px;
-    font-weight: 400;
+    font-weight: 500;
+    
     
 }
 .kredit-card > h3{
@@ -34,15 +35,17 @@ padding: 100px 10% 100px 0;
 }
 .kredit-card > .sta{
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+}
+.kredit-card > .sta > .gacha{
+    display: flex;
+    justify-content: right;
 }
 
 .kredit-stavkasi{
     padding: 5%;
     border-radius: 25px;
     margin: 70px 0;
-    background-color: rgb(172, 238, 238);
+    background-color: rgb(209, 246, 246);
 }
 /* mq */
 .grid-card { 
@@ -60,13 +63,13 @@ padding: 100px 10% 100px 0;
     font-weight: 400;
     grid-gap: 25px;
 }
-.stavka-card > div {
-    align-items: center;
+   .stavka-card > div > p{
+    margin-bottom: 5px;
    }
 .stavka-card  > h6 {
-    font-size: 20px;
-    font-weight: 200;
-    margin: 15px 0;
+    font-size: 16px;
+    font-weight: 500;
+    /* margin: 5px 0; */
 }
 .stavka-card  > h6:hover {
    cursor: pointer;
@@ -77,9 +80,9 @@ padding: 100px 10% 100px 0;
 .stavka-card  > h6 >  h5{
     font-size: 15px;
 }
-.icon{
+.icon-button{
     position: relative;
-    /* animation-name: example; */
+    animation-name: example;
     animation-duration: 1s;
     animation-direction: reverse; 
     animation-iteration-count: infinite;
@@ -123,24 +126,28 @@ padding: 100px 10% 100px 0;
     display: grid;
     justify-content: center;
     align-items: center;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     text-align: center;
     padding: 10% 0;
     grid-gap: 0;
     font-size: 30px;
     border-radius: 50%;
-    border: 15px solid rgb(54, 144, 176);
+    border: 10px solid rgb(54, 144, 176);
 }
 .foiz-stavkasi>hr {
- width: 40%;
+ width: 50%;
  text-align: center;
- margin: 0 28%;
+ margin: 0 25% 14px  25%; 
 
 }
 .foiz-stavkasi>p {
-    font-size: 20px;
+    font-size: 10px;
     
+   }
+  .foiz-card > .foiz-stavkasi >h1, h4{
+    margin-top: -20px;
+    margin-bottom: 10px;
    }
 
     .kredit-button{
@@ -191,10 +198,11 @@ padding: 100px 10% 100px 0;
     justify-content: center;
     align-items: center;
     border: 1px solid rgb(220, 226, 231);
-    height: 100%;
+    /* background-color: rgb(234, 158, 158); */
+    height: 800px;
 }
 .kreit-corusel > img {
-    height: 620px;
+    height: 920px;
     width: 100%;
     object-fit: cover;
     border-radius: 30px 0 0 30px;
@@ -239,16 +247,50 @@ padding: 100px 10% 100px 0;
     border: 1px solid rgb(220, 226, 231);
 }
 .kreit-ilova-container > img {
-    height: 620px;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 30px 0 0 30px;
 }
 .kreit-ilova-card{
-    margin: 18%;
+    margin: 16%;
 }
-.kreit-ilova-card > h1, p, h4{
+.kreit-ilova-card > h1, p, h4, .havola, .xizmat-korsatish{
     margin-bottom: 30px;
+}
+.kreit-ilova-card > .havola{
+display: flex;
+justify-content: left;
+align-items: center;
+height: 60px;
+width: 380px;
+border: 1px solid rgb(210, 217, 219);
+border-radius: 10px;
+}
+.havola>  button {
+    font-size: 17px;
+    height: 101%;
+    width: 51%;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: rgb(218, 220, 206);
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 1s;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+.havola> input[type=number]{
+    -moz-appearance: textfield;
+    padding: 0 3%;
+    height: 100%;
+    font-size: 17px;
+    width: 50%;
+    border: none;
+    border-radius: 10px 0 0 10px;
 }
 .yuklab-olish{
     display: flex;
@@ -276,6 +318,18 @@ color: aqua;
  font-size: 15px;
  font-weight: 500;
 }
+.xizmat-korsatish {
+    display: flex;
+    align-items: center;
+}
+.xizmat-korsatish > .text {
+  color: rgb(45, 151, 209);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  font-weight: 500;
+  margin-left: 10px;
+  cursor: pointer;
+}
 
    @media only screen and (max-width: 600px) {
     .container-kreditlar {
@@ -300,6 +354,9 @@ color: aqua;
         }
         .kreit-ilova-container> img{
             border-radius: 0 0 30px 30px;
+        }
+        .kreit-ilova-card{
+            margin: 5%;
         }
   }
   
@@ -331,6 +388,10 @@ color: aqua;
      .kreit-ilova-container> img{
         border-radius: 0 0 30px 30px;
     }
+    
+    .kreit-ilova-card{
+        margin: 7%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -354,6 +415,10 @@ color: aqua;
     .kredit-rasmiylashtirish-card{
         grid-template-columns: auto auto auto;
      }
+     
+     .kreit-ilova-card{
+        margin: 16%;
+    }
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */

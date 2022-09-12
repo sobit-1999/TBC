@@ -1,0 +1,22 @@
+.shartlar-container{
+    margin: 0 25%;
+    border: 1px solid;
+    padding: 50px;
+    border-radius: 30px;
+    position: static;
+    z-index: 2;
+    transform: translate(-50% -50%);
+    background-color: #fff;
+}
+.shartlar-container> h1 {
+    margin-bottom: 30px;
+
+}
+.shartlar-container> button {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    background-color: blue;
+}
