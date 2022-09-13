@@ -118,7 +118,7 @@ a > .icon-link {
         /* position: absolute; */
         display: flex;
         justify-content: space-between;
-        margin: 0 10%;
+        margin: 0 1%;
     }
     .img-phone {
         margin-bottom: -100px;
@@ -139,7 +139,7 @@ a > .icon-link {
         /* position: absolute; */
         display: flex;
         justify-content: space-between;
-        margin: 0 10%;
+        margin: 0 1%;
     }
     .img-phone {
         margin-bottom: -100px;
