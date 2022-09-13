@@ -108,6 +108,24 @@ a > .icon-link {
     .footer-container {
         padding: 20px 1%;
       }
+      .footer-container {
+        padding: 20px 2%;
+      }
+      .footer-card1{
+        grid-template-columns: auto;
+    }
+    .footer-card-phone{
+        /* position: absolute; */
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10%;
+    }
+    .img-phone {
+        margin-bottom: -100px;
+    }
+    .img-qr {
+        margin-right:  30%;
+    }
   }
   
   @media only screen and (min-width: 600px) {
