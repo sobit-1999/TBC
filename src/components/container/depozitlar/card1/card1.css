@@ -10,9 +10,8 @@
   object-fit: cover;
 }
 .card {
-  font-size: 30px;
   padding: 100px 10%;
-    grid-area: 2 / 1 ;
+  grid-area: 2 / 1 ;
 }
 .card > h1 {
   font-size: 50px;
@@ -39,7 +38,6 @@ h2 {
     
   }
   .card {
-    font-size: 15px;
     padding: 0px 0 20px 0;
     grid-area: 1 / 1 ;
   }
@@ -54,7 +52,6 @@ h2 {
 
   .card {
     padding: 0px 0 20px 0;
-    font-size: 15px;
     grid-area: 1 / 1;
   }
 }
@@ -67,7 +64,6 @@ h2 {
   }
   .card {
     padding: 0px 0 20px 0;
-    font-size: 20px;
   }
 }
 
@@ -76,12 +72,10 @@ h2 {
   .container {
     display: grid;
     grid-template-columns: 60% 40%;
-
   }
 
   .card {
     padding: 100px 10%;
-    font-size: 25px;
     grid-area: 1 / 2;
   }
 }

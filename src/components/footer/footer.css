@@ -1,0 +1,87 @@
+.footer-container {
+  background-color: rgb(21, 21, 29);
+  color: #fff;
+  padding: 20px 8%;
+}
+.footer-card1 {
+  display: grid;
+  grid-template-columns: 70% auto;
+}
+.call-icons{
+    display: flex;
+    justify-content:space-between;
+    margin-right: 10%;
+    align-items: center;
+}
+a > .icon-pase {
+    font-size: 50px;
+    margin-right: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.689);
+    padding: 10px;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.689);
+}
+.call-pages {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 16px;
+}
+
+.call-pages > div > p {
+    margin: 10px 0;
+    color: antiquewhite;
+}
+.call-pages > div > h3 {
+    margin: 10px 0;
+    font-weight: 500;
+}
+.footer-icon {
+    width: 100%;
+}
+.footer-icon-card {
+    background-color: #000;
+    border-radius: 30px;
+    padding: 50px;
+}
+.footer-card-phone {
+    display: flex;
+}
+.img-phone {
+    margin-top: -80px;
+}
+.img-qr {
+    width: 100px;
+    height: 100px;
+    margin:  30px;
+    padding:  20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.footer-tbs-app {
+    align-items: center;
+}
+.footer-tbs-app > a {
+    display: flex;
+  width: 170px;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s;
+  color: #fff;
+  margin-top: 15px;
+}
+.footer-tbs-app > a > .footer-app {
+  font-size: 60px;
+  margin-right: 14px;
+  border: 1px solid rgb(98, 97, 97);
+  padding: 10px;
+  border-radius: 20px;
+}
+.footer-tbs-app > a > span > h5 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.footer-tbs-app :hover {
+  color: aqua;
+}

@@ -1,0 +1,52 @@
+.container3 {
+  text-align: center;
+  display: block;
+  margin-top: 50px;
+}
+.container3 > p{
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+.card3 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 3%;
+  margin-top: 50px;
+  text-align: left;
+  padding: 0;
+  /* font-size: 20px; */
+}
+.card3 > div {
+  border: 0.1px solid black;
+  padding: 50px 10%;
+  /* height: 350px;x */
+  border-radius: 20px;
+}
+.card3 > div > h4 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 600px) {
+
+  .card3 {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .card3 {
+    grid-template-columns: auto auto;
+  }
+}
+  @media only screen and (min-width: 768px) {
+  .card3 {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+  .card3 {
+    grid-template-columns: auto auto auto auto;
+  }
+}

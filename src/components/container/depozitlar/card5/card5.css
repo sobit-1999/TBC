@@ -1,0 +1,140 @@
+.container5 {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 50% auto;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(220, 226, 231);
+}
+.container5 > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px 0 0 30px;
+}
+.card5 {
+  margin: 10%;
+}
+.card5 > h1,
+p,
+h4,
+.havola,
+.xizmat-korsatish {
+  margin-bottom: 30px;
+}
+.card5 > .havola {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 60px;
+  width: 380px;
+  border: 1px solid rgb(210, 217, 219);
+  border-radius: 10px;
+}
+.havola > button {
+  font-size: 17px;
+  height: 101%;
+  width: 51%;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: rgb(218, 220, 206);
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 1s;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.havola > input[type="number"] {
+  -moz-appearance: textfield;
+  padding: 0 3%;
+  height: 100%;
+  font-size: 17px;
+  width: 50%;
+  border: none;
+  border-radius: 10px 0 0 10px;
+}
+.yuklab-olish {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.yuklab-olish > a {
+  display: flex;
+  width: 170px;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s;
+}
+.yuklab-olish :hover {
+  color: aqua;
+}
+.yuklab-olish > a > .icon {
+  font-size: 60px;
+  margin-right: 14px;
+  border: 1px solid rgb(98, 97, 97);
+  padding: 10px;
+  border-radius: 20px;
+}
+.yuklab-olish > a > span > h5 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.xizmat-korsatish {
+  display: flex;
+  align-items: center;
+}
+.xizmat-korsatish > .text {
+  color: rgb(45, 151, 209);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  font-weight: 500;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .container5 {
+    grid-template-columns: auto;
+  }
+  .container5 > img {
+    border-radius: 30px 30px 0 0;
+  }
+  .card5 {
+    margin: 5%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container5 {
+    grid-template-columns: auto;
+  }
+  
+  .container5 > img {
+    border-radius: 30px 30px 0 0;
+  }
+  
+  .card5 {
+    margin: 7%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card5 {
+    font-size: 18px;
+    margin: 10%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container5 {
+    grid-template-columns: 50% 50%;
+    /* font-size: 17px; */
+  }
+  .container5 > img {
+    border-radius: 30px 0 0 30px;
+  }
+}

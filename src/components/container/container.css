@@ -1,326 +1,325 @@
-.container-kreditlar {
-    display: grid;
-    grid-template-columns: 45% 55%;
+/* .container-kreditlar {
+  display: grid;
+  grid-template-columns: 45% 55%;
 }
 
 .container-kreditlar > img {
-    width: 100%;
-    border-radius: 30px;
-    height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  height: 100%;
 }
-.kredit-card{
-font-size: 20px;
-padding: 100px 10% 100px 0;
+.kredit-card {
+  font-size: 20px;
+  padding: 100px 10% 100px 0;
 }
-.kredit-card > h1{
-    font-size: 50px;
-    font-weight: 500;
-    
-    
+.kredit-card > h1 {
+  font-size: 50px;
+  font-weight: 500;
 }
-.kredit-card > h3{
-    font-weight: 400;
+.kredit-card > h3 {
+  font-weight: 400;
 }
-.kredit-card >.sta > span{
-    display: flex;
-    align-items: center;
-    margin: 1px;
-    width: 50%;
+.kredit-card > .sta > span {
+  display: flex;
+  align-items: center;
+  margin: 1px;
+  width: 50%;
 }
-.kredit-card >.sta > span > h2 {
-    display: flex;
-    margin: 5px;
-    font-weight: 500;
-    margin-top: -2px;
+.kredit-card > .sta > span > h2 {
+  display: flex;
+  margin: 5px;
+  font-weight: 500;
+  margin-top: -2px;
 }
-.kredit-card > .sta{
-    display: flex;
+.kredit-card > .sta {
+  display: flex;
 }
-.kredit-card > .sta > .gacha{
-    display: flex;
-    justify-content: right;
+.kredit-card > .sta > .gacha {
+  display: flex;
+  justify-content: right;
 }
 
-.kredit-stavkasi{
-    padding: 5%;
-    border-radius: 25px;
-    margin: 70px 0;
-    background-color: rgb(209, 246, 246);
+.kredit-stavkasi {
+  padding: 5%;
+  border-radius: 25px;
+  margin: 70px 0;
+  background-color: rgb(209, 246, 246);
 }
-/* mq */
-.grid-card { 
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto 25%;
-    /* background-color: #fff; */
-    grid-gap: 30px;
-    align-items: center;
+.grid-card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 25%;
+  grid-gap: 30px;
+  align-items: center;
 }
-.stavka-card{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50% ;
-    font-weight: 400;
-    grid-gap: 25px;
+.stavka-card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-weight: 400;
+  grid-gap: 25px;
 }
-   .stavka-card > div > p{
-    margin-bottom: 5px;
-   }
-.stavka-card  > h6 {
-    font-size: 16px;
-    font-weight: 500;
-    /* margin: 5px 0; */
+.stavka-card > div > p {
+  margin-bottom: 5px;
 }
-.stavka-card  > h6:hover {
-   cursor: pointer;
+.stavka-card > h6 {
+  font-size: 16px;
+  font-weight: 500;
 }
-.stavka-card  > h6 > p, h5{
-    font-size: 12px;
+.stavka-card > h6:hover {
+  cursor: pointer;
 }
-.stavka-card  > h6 >  h5{
-    font-size: 15px;
+.stavka-card > h6 > p,
+h5 {
+  font-size: 12px;
 }
-.icon-button{
-    position: relative;
-    animation-name: example;
-    animation-duration: 1s;
-    animation-direction: reverse; 
-    animation-iteration-count: infinite;
-     
+.stavka-card > h6 > h5 {
+  font-size: 15px;
+}
+.icon-button {
+  position: relative;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0% {
+    top: 10px;
   }
-  
-  @keyframes example {
-    0%   {  top:10px;}
-    100%  {  top:0px;}
+  100% {
+    top: 0px;
   }
+}
 .stavka-card > div > .input {
-    width: 100%;
-    height: 51px;
-    margin-bottom: 25px;
-    margin-top: 3px;
-    bottom: none;
-    border-radius: 15px;
-    padding: 10px;
-    background-color: #fff;
+  width: 100%;
+  height: 51px;
+  margin-bottom: 25px;
+  margin-top: 3px;
+  bottom: none;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #fff;
 }
-.stavka-card > div > .input >input {
-    font-size: 20px;
-    border: none;
-    padding: 0 5%;
-    width: 100%;
+.stavka-card > div > .input > input {
+  font-size: 20px;
+  border: none;
+  padding: 0 5%;
+  width: 100%;
 }
-.stavka-card > div > .input >div {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 5px;
-    margin-top: -10px;
+.stavka-card > div > .input > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  margin-top: -10px;
 }
-.foiz-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.foiz-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.foiz-stavkasi{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    text-align: center;
-    padding: 10% 0;
-    grid-gap: 0;
-    font-size: 30px;
-    border-radius: 50%;
-    border: 10px solid rgb(54, 144, 176);
+.foiz-stavkasi {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  padding: 10% 0;
+  grid-gap: 0;
+  font-size: 30px;
+  border-radius: 50%;
+  border: 10px solid rgb(54, 144, 176);
 }
-.foiz-stavkasi>hr {
- width: 50%;
- text-align: center;
- margin: 0 25% 14px  25%; 
-
+.foiz-stavkasi > hr {
+  width: 50%;
+  text-align: center;
+  margin: 0 25% 14px 25%;
 }
-.foiz-stavkasi>p {
-    font-size: 10px;
-    
-   }
-  .foiz-card > .foiz-stavkasi >h1, h4{
-    margin-top: -20px;
-    margin-bottom: 10px;
-   }
-
-    .kredit-button{
-     text-align: center;
-     width: 100%;
-     margin-top: 40px;
-    }
-    .kredit-button > button{
-    font-size: 20px;
-    padding: 8px 20px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    background-color: rgb(50, 191, 231);
-   }
-
-   /* card-3 */
-   .kredit-rasmiylashtirish{
-    text-align: center;
+.foiz-stavkasi > p {
+  font-size: 10px;
 }
-.kredit-rasmiylashtirish-card{
-    display: grid;
-       grid-template-columns: auto auto auto auto;
-       grid-gap: 4%;
-       margin-top: 50px;
-       text-align: left;
-    }
-    .kredit-rasmiylashtirish-card >div{
-       border: 0.1px solid black;
-       padding: 50px 10%;
-       height: 350px;
-       border-radius: 30px;
-       font-size: 20px;
+.foiz-card > .foiz-stavkasi > h1,
+h4 {
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
 
-   }
-   .kredit-rasmiylashtirish-card >div>h3{
-    margin-bottom: 20px;
-    font-weight: 500;
-   }
+.kredit-button {
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+.kredit-button > button {
+  font-size: 20px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(50, 191, 231);
+}
 
-   /* corusel-card */
-   .kreit-corusel{
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 50% auto;
-    border-radius: 30px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(220, 226, 231);
-    /* background-color: rgb(234, 158, 158); */
-    height: 800px;
+.kredit-rasmiylashtirish {
+  text-align: center;
+}
+.kredit-rasmiylashtirish-card {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 4%;
+  margin-top: 50px;
+  text-align: left;
+}
+.kredit-rasmiylashtirish-card > div {
+  border: 0.1px solid black;
+  padding: 50px 10%;
+  height: 350px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+.kredit-rasmiylashtirish-card > div > h3 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.kreit-corusel {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 50% auto;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(220, 226, 231);
+  height: 800px;
 }
 .kreit-corusel > img {
-    height: 920px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 30px 0 0 30px;
+  height: 920px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px 0 0 30px;
 }
-.kreit-corusel-card{
-    font-size: 28px;
-    margin: 0 30% 0 20%;
+.kreit-corusel-card {
+  font-size: 28px;
+  margin: 0 30% 0 20%;
 }
-.kreit-corusel-card> h1{
-    margin: 20px 0;
-    font-weight: 600;
+.kreit-corusel-card > h1 {
+  margin: 20px 0;
+  font-weight: 600;
 }
-.kreit-corusel-card> button{
-    margin: 30px 0;
-    font-size: 20px;
-    padding: 8px 20px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    background-color: rgb(50, 191, 231);
+.kreit-corusel-card > button {
+  margin: 30px 0;
+  font-size: 20px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(50, 191, 231);
 }
-.back-next{
-    display: flex;
-    justify-content: right;
-    margin-right: 30px;
+.back-next {
+  display: flex;
+  justify-content: right;
+  margin-right: 30px;
 }
-.back ,.next {
-    border-radius: 50%;
-    padding: 7px;
-    text-align: center;
-    font-size: 10px;;
-    margin: 2px;
+.back,
+.next {
+  border-radius: 50%;
+  padding: 7px;
+  text-align: center;
+  font-size: 10px;
+  margin: 2px;
 }
-.kreit-ilova-container{
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 50% auto;
-    border-radius: 30px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(220, 226, 231);
+.kreit-ilova-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 50% auto;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(220, 226, 231);
 }
 .kreit-ilova-container > img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 30px 0 0 30px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px 0 0 30px;
 }
-.kreit-ilova-card{
-    margin: 16%;
+.kreit-ilova-card {
+  margin: 16%;
 }
-.kreit-ilova-card > h1, p, h4, .havola, .xizmat-korsatish{
-    margin-bottom: 30px;
+.kreit-ilova-card > h1,
+p,
+h4,
+.havola,
+.xizmat-korsatish {
+  margin-bottom: 30px;
 }
-.kreit-ilova-card > .havola{
-display: flex;
-justify-content: left;
-align-items: center;
-height: 60px;
-width: 380px;
-border: 1px solid rgb(210, 217, 219);
-border-radius: 10px;
+.kreit-ilova-card > .havola {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 60px;
+  width: 380px;
+  border: 1px solid rgb(210, 217, 219);
+  border-radius: 10px;
 }
-.havola>  button {
-    font-size: 17px;
-    height: 101%;
-    width: 51%;
-    border: none;
-    border-radius: 0 10px 10px 0;
-    background-color: rgb(218, 220, 206);
-    opacity: 0.7;
-    cursor: pointer;
-    transition: 1s;
+.havola > button {
+  font-size: 17px;
+  height: 101%;
+  width: 51%;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: rgb(218, 220, 206);
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 1s;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-   -webkit-appearance: none;
-   margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
-.havola> input[type=number]{
-    -moz-appearance: textfield;
-    padding: 0 3%;
-    height: 100%;
-    font-size: 17px;
-    width: 50%;
-    border: none;
-    border-radius: 10px 0 0 10px;
+.havola > input[type="number"] {
+  -moz-appearance: textfield;
+  padding: 0 3%;
+  height: 100%;
+  font-size: 17px;
+  width: 50%;
+  border: none;
+  border-radius: 10px 0 0 10px;
 }
-.yuklab-olish{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.yuklab-olish {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.yuklab-olish > a{
-    display: flex;
-    width: 170px;
-    align-items: center;
-    cursor: pointer;
-    transition: 1s;
+.yuklab-olish > a {
+  display: flex;
+  width: 170px;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s;
 }
-.yuklab-olish  :hover{
-color: aqua;
+.yuklab-olish :hover {
+  color: aqua;
 }
-.yuklab-olish > a > .icon{
- font-size: 60px;
- margin-right: 14px;
- border: 1px solid rgb(98, 97, 97);
- padding: 10px;
- border-radius: 20px;
+.yuklab-olish > a > .icon {
+  font-size: 60px;
+  margin-right: 14px;
+  border: 1px solid rgb(98, 97, 97);
+  padding: 10px;
+  border-radius: 20px;
 }
-.yuklab-olish > a > span > h5{
- font-size: 15px;
- font-weight: 500;
+.yuklab-olish > a > span > h5 {
+  font-size: 15px;
+  font-weight: 500;
 }
 .xizmat-korsatish {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .xizmat-korsatish > .text {
   color: rgb(45, 151, 209);
@@ -331,129 +330,130 @@ color: aqua;
   cursor: pointer;
 }
 
-   @media only screen and (max-width: 600px) {
-    .container-kreditlar {
+@media only screen and (max-width: 600px) {
+  .container-kreditlar {
     display: grid;
     grid-template-columns: 100%;
-    }
-    .kredit-card{
-        padding: 0px 0 20px 0;
-        }
-    .stavka-card{
-        display: grid;
-        grid-template-columns: 100%;
-    }
-    .grid-card { 
-        grid-template-columns: 100%;
-    }
-    .kredit-rasmiylashtirish-card{
-           grid-template-columns: auto auto ;
-        }
-        .kreit-ilova-container{
-            grid-template-columns: auto;
-        }
-        .kreit-ilova-container> img{
-            border-radius: 0 0 30px 30px;
-        }
-        .kreit-ilova-card{
-            margin: 5%;
-        }
   }
-  
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-    .container-kreditlar {
-        display: grid;
-        grid-template-columns: 100%;
-    }
-    .stavka-card{
-        display: grid;
-        grid-template-columns: 100% ;
-    }
-    
-    .kredit-card{
-        padding: 0px 0 20px 0;
-        }
-    
-    .grid-card { 
-        grid-template-columns: 100%;  
-    }
-    .kredit-rasmiylashtirish-card{
-        grid-template-columns: auto  auto;
-     }
-     .kreit-ilova-container{
-         grid-template-columns: auto;
-     }
-     
-     .kreit-ilova-container> img{
-        border-radius: 0 0 30px 30px;
-    }
-    
-    .kreit-ilova-card{
-        margin: 7%;
-    }
+  .kredit-card {
+    padding: 0px 0 20px 0;
+  }
+  .stavka-card {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .grid-card {
+    grid-template-columns: 100%;
+  }
+  .kredit-rasmiylashtirish-card {
+    grid-template-columns: auto auto;
+  }
+  .kreit-ilova-container {
+    grid-template-columns: auto;
+  }
+  .kreit-ilova-container > img {
+    border-radius: 0 0 30px 30px;
+  }
+  .kreit-ilova-card {
+    margin: 5%;
+  }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px ) {
-    .container-kreditlar {
-        display: grid;
-        grid-template-columns: 100% ;
-    }
-    .kredit-card{
-        padding: 0px 0 20px 0;
-          }
-    .stavka-card{
-        display: grid;
-        grid-template-columns: 100%;
-    }
-    
-    .grid-card { 
-        grid-template-columns:auto 50%;
-    }
-    
-    .kredit-rasmiylashtirish-card{
-        grid-template-columns: auto auto auto;
-     }
-     
-     .kreit-ilova-card{
-        margin: 16%;
-    }
-  } 
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    .container-kreditlar {
-        display: grid;
-        grid-template-columns: 45% 55%;
-    }
-    
-    .kredit-card{
-        padding: 100px 10% 100px 0;
-        }
-    .stavka-card{
-        display: grid;
-        grid-template-columns: 50% 50% ;
-        font-weight: 400;
-    }
-    .grid-card { 
-        grid-template-columns:auto 40%;
-    }
-    
-    .kredit-rasmiylashtirish-card{
-        grid-template-columns: auto auto auto auto;
-     }
-     
-     .kreit-ilova-container{
-        grid-template-columns:50% auto;
-    }
-    .kreit-ilova-container> img{
-        border-radius:  0 30px 30px 0;
-    }
-  } 
+@media only screen and (min-width: 600px) {
+  .container-kreditlar {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .stavka-card {
+    display: grid;
+    grid-template-columns: 100%;
+  }
 
-  @media only screen and (min-width: 1200px) {
-    .grid-card { 
-        grid-template-columns:auto 30%;
-    }
-  } 
+  .kredit-card {
+    padding: 0px 0 20px 0;
+  }
+
+  .grid-card {
+    grid-template-columns: 100%;
+  }
+  .kredit-rasmiylashtirish-card {
+    grid-template-columns: auto auto;
+  }
+  .kreit-ilova-container {
+    grid-template-columns: auto;
+  }
+
+  .kreit-ilova-container > img {
+    border-radius: 0 0 30px 30px;
+  }
+
+  .kreit-ilova-card {
+    margin: 7%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container-kreditlar {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .kredit-card {
+    padding: 0px 0 20px 0;
+  }
+  .stavka-card {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .grid-card {
+    grid-template-columns: auto 50%;
+  }
+
+  .kredit-rasmiylashtirish-card {
+    grid-template-columns: auto auto auto;
+  }
+
+  .kreit-ilova-card {
+    margin: 16%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container-kreditlar {
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+
+  .kredit-card {
+    padding: 100px 10% 100px 0;
+  }
+  .stavka-card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-weight: 400;
+  }
+  .grid-card {
+    grid-template-columns: auto 40%;
+  }
+
+  .kredit-rasmiylashtirish-card {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .kreit-ilova-container {
+    grid-template-columns: 50% auto;
+  }
+  .kreit-ilova-container > img {
+    border-radius: 0 30px 30px 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .grid-card {
+    grid-template-columns: auto 30%;
+  }
+} */
+
+.footer{
+    bottom: none;
+}
