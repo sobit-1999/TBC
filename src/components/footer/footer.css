@@ -5,33 +5,34 @@
 }
 .footer-card1 {
   display: grid;
-  grid-template-columns: 70% auto;
+  grid-template-columns: 60% auto;
 }
 .call-icons{
     display: flex;
     justify-content:space-between;
     margin-right: 10%;
     align-items: center;
+    margin: 40px 10% 40px 0;
 }
-a > .icon-pase {
+a > .icon-link {
     font-size: 50px;
     margin-right: 14px;
     border: 1px solid rgba(255, 255, 255, 0.689);
     padding: 10px;
     border-radius: 20px;
-    color: rgba(255, 255, 255, 0.689);
+    color: #fff;
 }
-.call-pages {
+.call-links {
     display: grid;
     grid-template-columns: auto auto auto;
     font-size: 16px;
 }
 
-.call-pages > div > p {
+.call-links > div > p {
     margin: 10px 0;
-    color: antiquewhite;
+    color: rgba(255, 255, 255, 0.497);
 }
-.call-pages > div > h3 {
+.call-links > div > h3 {
     margin: 10px 0;
     font-weight: 500;
 }
@@ -85,3 +86,65 @@ a > .icon-pase {
 .footer-tbs-app :hover {
   color: aqua;
 }
+.footer-card2{
+    margin: 50px 0;
+}
+.word-link{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.word-link > a{
+    color: rgba(255, 255, 255, 0.397);
+}
+
+.footer-card2 > p{
+    color: rgba(255, 255, 255, 0.184);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .footer-container {
+        padding: 20px 1%;
+      }
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .footer-container {
+        padding: 20px 2%;
+      }
+      .footer-card1{
+        grid-template-columns: auto;
+    }
+    .footer-card-phone{
+        /* position: absolute; */
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10%;
+    }
+    .img-phone {
+        margin-bottom: -100px;
+    }
+    .img-qr {
+        margin-right:  30%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+  }
+  
+  @media only screen and (min-width: 992px) {
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .footer-card1{
+        grid-template-columns: 60% auto;
+    }
+  }
+
+  @media only screen and (min-width: 1500px) {
+    .footer-container {
+        padding: 20px 8%;
+      }
+  }

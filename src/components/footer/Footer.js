@@ -11,14 +11,22 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
 export default function Footer() {
-  const iconsPase = [
-    {name: TelegramIcon, a:'https://t.me/tbc_bank_uzb' },
-    {name: InstagramIcon, a:'https://www.instagram.com/tbcbankuzbekistan/' },
+  const iconsLink = [
+    {name: TelegramIcon, a:'///t.me/tbc_bank_uzb' },
+    {name: InstagramIcon, a:'/https://www.instagram.com/tbcbankuzbekistan/' },
     {name: LinkedInIcon, a:'https://www.linkedin.com/company/tbcbankuz/' },
     {name: FacebookIcon, a:'https://www.facebook.com/tbcbankuz' },
     {name: YouTubeIcon, a:'https://www.youtube.com/c/TBCBankuz' }
 ]
-  const callPages = [
+const wordLink = [
+    {name: 'Murojatlar statistikasi', a:'///t.me/tbc_bank_uzb' },
+    {name: 'Tenderlar', a:'/https://www.instagram.com/tbcbankuzbekistan/' },
+    {name: 'Ommoviy oferta', a:'https://tbcbank.uz/uploads/Oferta_dlya_mobilnogo_BG_UZ_13579ddecf.pdf' },
+    {name: 'Bosh shartlar', a:'https://tbcbank.uz/uploads/T_and_C_Final_UZB_05c3f36eb2.pdf' },
+    {name: 'Hujjatlar', a:'https://www.youtube.com/c/TBCBankuz' },
+    {name: 'Litsenziyalar va sertifikatlar', a:'https://tbcbank.uz/uploads/Liczenziya_45f4c035da.pdf' }
+]
+  const callLink = [
     {
       nameCategory: "Mahsulotlar",
       section: [
@@ -60,16 +68,16 @@ export default function Footer() {
         <div className="footer-call">
           <div className="call-icons">
             <div>
-            <h3>Baxt markazi - 1150 </h3>
+            <h2>Baxt markazi - 1150 </h2>
             <p>Call-markaz</p>
             </div>
-            <div >{iconsPase.map((icon, i) => {return <a href={icon.a} key={i}>
-               < icon.name className="icon-pase"/>
+            <div >{iconsLink.map((icon, i) => {return <a href={icon.a} key={i}>
+               < icon.name className="icon-link"/>
             </a>})
             }</div>
           </div>
-          <div className="call-pages">
-            {callPages.map((item, i) => {
+          <div className="call-links">
+            {callLink.map((item, i) => {
               return (
                 <div key={i}>
                   <h3>{item.nameCategory}</h3>
@@ -109,7 +117,9 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-card2">
-         <h3>Anonim ishonch telefoni</h3>
+         <h2>Anonim ishonch telefoni</h2>
+         <div className="word-link">{wordLink.map((item, i) => {return <a href={item.a} key={i}>{item.name}</a>})}</div>
+         <p>© 2022 ATB "TBC BANK" Litsenziya #86, 17.03.2022. Veb-sayt materiallaridan foydalanganda www.tbcbank.uz veb-sayti havolasi koʻrsatilishi shart.</p>
       </div>
     </div>
   );
