@@ -1,0 +1,124 @@
+.tbc-uz-ilovasi-container1 {
+  display: grid;
+  grid-template-columns: 45% auto;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 30px;
+}
+.tbc-uz-ilovasi-container1 > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.tbc-uz-ilovasi-card1 {
+  margin-right: 20px;
+}
+.tbc-uz-ilovasi-card1 > h1,
+p,
+h4,
+.tbc-uz-ilovasi-havola1,
+.tbc-uz-ilovasi-xizmat-korsatish1 {
+  margin-bottom: 30px;
+}
+ .tbc-uz-ilovasi-havola1 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 60px;
+  width: 380px;
+  border: 1px solid rgb(210, 217, 219);
+  border-radius: 10px;
+}
+.tbc-uz-ilovasi-havola1 > button {
+  font-size: 17px;
+  height: 101%;
+  width: 51%;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: rgb(218, 220, 206);
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 1s;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.tbc-uz-ilovasi-havola1 > input[type="number"] {
+  -moz-appearance: textfield;
+  padding: 0 3%;
+  height: 100%;
+  font-size: 17px;
+  width: 50%;
+  border: none;
+  border-radius: 10px 0 0 10px;
+}
+.tbc-uz-ilovasi-yuklab-olish1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tbc-uz-ilovasi-yuklab-olish1 > a {
+  display: flex;
+  width: 170px;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s;
+  width: 200px;
+}
+.tbc-uz-ilovasi-yuklab-olish1 :hover {
+  color: aqua;
+}
+ a >.tbc-uz-ilovasi-icon1 {
+  font-size: 60px;
+  margin-right: 14px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.258);
+}
+.tbc-uz-ilovasi-yuklab-olish1 > a > span > h5 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.tbc-uz-ilovasi-yuklab-olish1 > a > span {
+  font-size: 14px;
+  font-weight: 400;
+}
+.tbc-uz-ilovasi-xizmat-korsatish1 {
+  display: flex;
+  align-items: center;
+}
+ .tbc-uz-ilovasi-text1 {
+  color: rgb(45, 151, 209);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  font-weight: 500;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .tbc-uz-ilovasi-container1 {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .tbc-uz-ilovasi-container1 {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .tbc-uz-ilovasi-card1 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .tbc-uz-ilovasi-container1 {
+    grid-template-columns: 45% auto;
+  }
+}

@@ -1,0 +1,77 @@
+.tbc-start-container1 {
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-gap: 50px;
+}
+.tbc-start-container1 img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.tbc-start-card1 {
+  margin: 10% 5%;
+}
+.tbc-button{
+    padding: 10px 35px;
+    background-color: rgb(107, 191, 236);
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s;
+}
+.tbc-button :hover{
+    /* background-color: rgba(255, 255, 255, 0.273); */
+    background-color: rgb(61, 21, 21);
+}
+.tbc-start-card1 h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 50px 0;
+}
+
+.tbc-start-card1 p {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+    .tbc-start-container1 {
+        grid-template-columns: auto;
+        grid-gap: 0;
+      }
+      
+.tbc-start-card1 {
+    margin:  5% 1%;
+  }
+  }
+  
+  @media only screen and (min-width: 600px) {
+ 
+    .tbc-start-container1 {
+        grid-template-columns: auto;
+        grid-gap: 0;
+      }
+      
+.tbc-start-card1 {
+    margin:  5% 1%;
+  }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    
+  }
+  
+@media only screen and (min-width: 992px) {
+    .tbc-start-container1 {
+        grid-template-columns: 40% auto;
+        grid-gap: 50px;
+      }
+      
+.tbc-start-card1 {
+    margin: 10% 5%;
+  }
+}

@@ -6,64 +6,74 @@
 .footer-card1 {
   display: grid;
   grid-template-columns: 60% auto;
+  align-items: center;
 }
-.call-icons{
-    display: flex;
-    justify-content:space-between;
-    margin-right: 10%;
-    align-items: center;
-    margin: 40px 10% 40px 0;
+.call-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+  align-items: center;
+  margin: 40px 10% 40px 0;
+}
+.call-icons > div > p{
+    color: rgba(255, 255, 255, 0.319);
 }
 a > .icon-link {
-    font-size: 50px;
-    margin-right: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.689);
-    padding: 10px;
-    border-radius: 20px;
-    color: #fff;
+  font-size: 50px;
+  margin: 0 10px;
+  border: 1px solid rgba(255, 255, 255, 0.689);
+  padding: 10px;
+  border-radius: 20px;
+  color: #fff;
 }
 .call-links {
     display: grid;
     grid-template-columns: auto auto auto;
     font-size: 16px;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 .call-links > div > p {
-    margin: 10px 0;
-    color: rgba(255, 255, 255, 0.497);
+  margin: 10px 0;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.497);
+}
+.call-links >div  :hover {
+    color: #fff;
 }
 .call-links > div > h3 {
-    margin: 10px 0;
-    font-weight: 500;
+  margin: 10px 0;
+  font-weight: 500;
 }
 .footer-icon {
-    width: 100%;
+  width: 100%;
 }
 .footer-icon-card {
-    background-color: #000;
-    border-radius: 30px;
-    padding: 50px;
+  background-color: #000;
+  border-radius: 30px;
+  padding: 50px;
 }
 .footer-card-phone {
-    display: flex;
+  display: flex;
 }
 .img-phone {
-    margin-top: -80px;
+  margin-top: -80px;
 }
 .img-qr {
-    width: 100px;
-    height: 100px;
-    margin:  30px;
-    padding:  20px;
-    border-radius: 10px;
-    background-color: #fff;
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
 }
 
 .footer-tbs-app {
-    align-items: center;
+  align-items: center;
 }
 .footer-tbs-app > a {
-    display: flex;
+  display: flex;
   width: 170px;
   align-items: center;
   cursor: pointer;
@@ -86,83 +96,149 @@ a > .icon-link {
 .footer-tbs-app :hover {
   color: aqua;
 }
-.footer-card2{
-    margin: 50px 0;
+.footer-card2 {
+  margin: 50px 0;
 }
-.word-link{
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 0;
+.word-link {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
 }
-.word-link > a{
-    color: rgba(255, 255, 255, 0.397);
+.word-link > a {
+  color: rgba(255, 255, 255, 0.397);
+  margin-bottom: 10px;
 }
+.word-link :hover {
+    color: #fff;
+  }
+  .word-link :active {
+    color: #fff;
+  }
 
-.footer-card2 > p{
-    color: rgba(255, 255, 255, 0.184);
+.footer-card2 > p {
+  color: rgba(255, 255, 255, 0.184);
 }
-
-
 
 @media only screen and (max-width: 600px) {
-    .footer-container {
-        padding: 20px 1%;
-      }
-      .footer-container {
-        padding: 20px 2%;
-      }
-      .footer-card1{
-        grid-template-columns: auto;
-    }
-    .footer-card-phone{
-        /* position: absolute; */
-        display: flex;
-        justify-content: space-between;
-        margin: 0 1%;
-    }
-    .img-phone {
-        margin-bottom: -100px;
-    }
-    .img-qr {
-        margin-right:  30%;
-    }
+  .footer-container {
+    padding: 20px 1%;
   }
-  
-  @media only screen and (min-width: 600px) {
-    .footer-container {
-        padding: 20px 2%;
-      }
-      .footer-card1{
-        grid-template-columns: auto;
-    }
-    .footer-card-phone{
-        /* position: absolute; */
-        display: flex;
-        justify-content: space-between;
-        margin: 0 1%;
-    }
-    .img-phone {
-        margin-bottom: -100px;
-    }
-    .img-qr {
-        margin-right:  30%;
-    }
+  .footer-container {
+    padding: 20px 2%;
   }
-  
-  @media only screen and (min-width: 768px) {
+  .footer-card1 {
+    grid-template-columns: auto;
   }
-  
-  @media only screen and (min-width: 992px) {
-  }
-  
-  @media only screen and (min-width: 1200px) {
-    .footer-card1{
-        grid-template-columns: 60% auto;
-    }
+  .call-icons {
+    display: block;
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
   }
 
-  @media only screen and (min-width: 1500px) {
-    .footer-container {
-        padding: 20px 8%;
-      }
+  .call-links {
+    grid-template-columns: auto;
+    text-align: center;
   }
+  .footer-card-phone {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .img-phone {
+    display: none;
+  }
+
+  .footer-icon-card {
+    padding: 50px 10px;
+  }
+  
+  .word-link {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between;
+    margin: 30px 10%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .footer-container {
+    padding: 20px 2%;
+  }
+  .footer-card1 {
+    grid-template-columns: auto;
+  }
+  .call-icons {
+    display: block;
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+  }
+  .call-links {
+    grid-template-columns: auto;
+    text-align: center;
+  }
+
+  .call-links {
+    grid-template-columns: auto;
+  }
+  .footer-card-phone {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1%;
+  }
+  .img-phone {
+    margin-bottom: -100px;
+    display: block;
+  }
+  .img-qr {
+    margin-right: 180px;
+  }
+  .word-link {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    margin: 30px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .call-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+    align-items: center;
+    margin: 40px 10% 40px 0;
+  }
+  .call-links {
+    grid-template-columns: auto auto auto;
+    text-align: left;
+  }
+  .word-link {
+      display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    margin: 30px 10%;
+}
+}
+
+@media only screen and (min-width: 992px) {
+    .word-link {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer-card1 {
+    grid-template-columns: 60% auto;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .footer-container {
+    padding: 20px 8%;
+  }
+}

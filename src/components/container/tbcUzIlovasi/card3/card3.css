@@ -1,0 +1,146 @@
+.tbs-uz-ilovasi-container3 {
+    display: grid;
+    grid-template-columns: 50% auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 30px;
+    background-color: rgb(50, 45, 45);
+    border-radius: 20px;
+    margin-top: 50px;
+  }
+  .tbs-uz-ilovasi-container3 > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius:0 20px 20px 0;
+  }
+  .tbs-uz-ilovasi-card3 {
+    margin: 10%;
+    color: #fff;
+  }
+  .tbs-uz-ilovasi-card3 > h1,
+  p,
+  h4,
+  .tbc-uz-ilovasi-havola,
+  .tbc-uz-ilovasi-xizmat-korsatish {
+    margin-bottom: 30px;
+  }
+   .tbc-uz-ilovasi-havola {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 60px;
+    width: 380px;
+    border-radius: 10px;
+  }
+  .tbc-uz-ilovasi-havola > button {
+    font-size: 17px;
+    height: 101%;
+    width: 51%;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: rgb(218, 220, 206);
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 1s;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .tbc-uz-ilovasi-havola > input[type="number"] {
+    -moz-appearance: textfield;
+    padding: 0 3%;
+    height: 100%;
+    font-size: 17px;
+    width: 50%;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    background-color: rgb(39, 33, 33);
+    color: #fff;
+  }
+  .tbc-uz-ilovasi-yuklab-olish {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tbc-uz-ilovasi-yuklab-olish > a {
+    display: flex;
+    width: 170px;
+    align-items: center;
+    cursor: pointer;
+    transition: 1s;
+    width: 200px;
+    color: #fff;
+  }
+  .tbc-uz-ilovasi-yuklab-olish :hover {
+    color: aqua;
+  }
+  .tbc-uz-ilovasi-yuklab-olish > a > .tbc-uz-ilovasi-icon {
+    font-size: 60px;
+    margin-right: 14px;
+    border: 1px solid rgb(98, 97, 97);
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .tbc-uz-ilovasi-yuklab-olish > a > span > h5 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .tbc-uz-ilovasi-yuklab-olish > a > span {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .tbc-uz-ilovasi-xizmat-korsatish {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+  }
+   .tbc-uz-ilovasi-text {
+    color: rgb(45, 151, 209);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    font-weight: 500;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .tbs-uz-ilovasi-container3 {
+      grid-template-columns: auto;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .tbs-uz-ilovasi-container3 {
+      grid-template-columns: auto;
+    }
+    .tbs-uz-ilovasi-container3  img {
+        border-radius: 0 0 20px 20px;
+      }
+      .tbs-uz-ilovasi-card3 {
+        max-width: 5% 10%;
+      }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .tbs-uz-ilovasi-card3 {
+      font-size: 18px;
+      margin: 5% 10%;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .tbs-uz-ilovasi-container3 {
+      grid-template-columns: 45% auto;
+    }
+    .tbs-uz-ilovasi-container3  img {
+        border-radius:  0 20px 20px 0; 
+      }
+      .tbs-uz-ilovasi-card3 {
+        margin: 10%;
+      }
+    
+  }
+  

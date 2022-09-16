@@ -1,5 +1,6 @@
 .header_container{
     color: black;
+    position: sticky;
 }
 .category{
     display: flex;

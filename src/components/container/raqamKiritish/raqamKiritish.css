@@ -1,0 +1,148 @@
+.raqam-kiritish-container {
+    display: grid;
+    grid-template-columns: 50% auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 30px;
+    background-color: rgb(50, 45, 45);
+    border-radius: 20px;
+    margin-top: 50px;
+    margin: 50px 20%;
+    position: fixed;
+  }
+  .raqam-kiritish-container > img {
+    width: 80%;
+    object-fit: cover;
+    margin: 10%;
+    border-radius:0 20px 20px 0;
+  }
+  .raqam-kiritish-card {
+    margin: 10%;
+    color: #fff;
+  }
+  .raqam-kiritish-card > h1,
+  p,
+  h4,
+  .raqam-kiritish-havola,
+  .raqam-kiritish-xizmat-korsatish {
+    margin-bottom: 30px;
+  }
+   .raqam-kiritish-havola {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 60px;
+    width: 380px;
+    border-radius: 10px;
+  }
+  .raqam-kiritish-havola > button {
+    font-size: 17px;
+    height: 101%;
+    width: 51%;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: rgb(218, 220, 206);
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 1s;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .raqam-kiritish-havola > input[type="number"] {
+    -moz-appearance: textfield;
+    padding: 0 3%;
+    height: 100%;
+    font-size: 17px;
+    width: 50%;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    background-color: rgb(39, 33, 33);
+    color: #fff;
+  }
+  .raqam-kiritish-yuklab-olish {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.raqam-kiritish-yuklab-olish > a {
+    display: flex;
+    width: 170px;
+    align-items: center;
+    cursor: pointer;
+    transition: 1s;
+    width: 200px;
+    color: #fff;
+  }
+  .raqam-kiritish-yuklab-olish :hover {
+    color: aqua;
+  }
+  .raqam-kiritish-yuklab-olish > a > .tbc-uz-ilovasi-icon {
+    font-size: 60px;
+    margin-right: 14px;
+    border: 1px solid rgb(98, 97, 97);
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .raqam-kiritish-yuklab-olish > a > span > h5 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .raqam-kiritish-yuklab-olish > a > span {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .raqam-kiritish-xizmat-korsatish {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+  }
+   .raqam-kiritish-text {
+    color: rgb(45, 151, 209);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    font-weight: 500;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .raqam-kiritish-container {
+      grid-template-columns: auto;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .raqam-kiritish-container {
+      grid-template-columns: auto;
+    }
+    .raqam-kiritish-container  img {
+        border-radius: 0 0 20px 20px;
+      }
+      .raqam-kiritish-card {
+        max-width: 5% 10%;
+      }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .raqam-kiritish-card {
+      font-size: 18px;
+      margin: 5% 10%;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .raqam-kiritish-container {
+      grid-template-columns: 45% auto;
+    }
+    .raqam-kiritish-container  img {
+        border-radius:  0 20px 20px 0; 
+      }
+      .raqam-kiritish-card {
+        margin: 10%;
+      }
+    
+  }
+  

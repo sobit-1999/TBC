@@ -3,14 +3,17 @@
     border: 1px solid;
     padding: 50px;
     border-radius: 30px;
-    position: static;
-    z-index: 2;
     transform: translate(-50% -50%);
     background-color: #fff;
+    position: fixed;
+    display: block;
+    top: 20px;
+    font-size: 20px;
 }
-.shartlar-container> h1 {
-    margin-bottom: 30px;
-
+.shartlar-container > div {
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-between;
 }
 .shartlar-container> button {
     width: 100%;
@@ -19,4 +22,28 @@
     border-radius: 50px;
     border: none;
     background-color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+    .shartlar-container{
+        margin: 0 5%;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .shartlar-container{
+        margin: 0 5%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .shartlar-container{
+        margin: 0 15%;
+    }
+  }
+  
+@media only screen and (min-width: 992px) {
+    .shartlar-container{
+        margin: 0 25%;
+    }
 }

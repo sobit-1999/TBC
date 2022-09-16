@@ -19,12 +19,14 @@
 .card3 > div {
   border: 0.1px solid black;
   padding: 50px 10%;
-  /* height: 350px;x */
   border-radius: 20px;
 }
 .card3 > div > h4 {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   font-weight: 500;
+}
+.card3 > div > p{
+  font-size: 20px;
 }
 @media only screen and (max-width: 600px) {
 

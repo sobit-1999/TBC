@@ -86,7 +86,6 @@ useEffect(() => {
               <p>daromad</p>
               <h1>{valueMuddat*1.5}%</h1>
             </div>
-                  <h1>|</h1>
             <div>
               <p>stavka</p>
               <h1>{stavka}%</h1>
@@ -96,7 +95,6 @@ useEffect(() => {
         <div className="foiz-card">
           <div className="foiz-stavkasi">
             <h5>{valueMuddat} oy ichida jamg'arilgan summa</h5>
-            <hr/>
             <h4>{(valueMuddat*1.5/100*valueBoshlangich).toFixed(0)} UZS</h4>
           </div>
         </div>
